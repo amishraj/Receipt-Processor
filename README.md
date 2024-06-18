@@ -11,7 +11,7 @@ A docker file has been included as well.
 
 ## How to Run Locally
 
-Make sure you have Docker installed and running
+Make sure you have Docker installed and running.
 Clone the Repository and run the following commands from within the directory
 
 Next, pull the node:22-alpine image
