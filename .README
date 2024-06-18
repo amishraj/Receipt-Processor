@@ -1,5 +1,0 @@
-Run
-
-docker pull node:22-alpine
-sudo docker build -t receipt-processor .
-sudo docker run --name receipt-processor -p 80:3000 -d receipt-processor
