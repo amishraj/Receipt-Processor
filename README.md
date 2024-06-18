@@ -14,13 +14,13 @@ A docker file has been included as well.
 Make sure you have Docker installed and running.
 Clone the Repository and run the following commands from within the directory
 
-Next, pull the node:22-alpine image
+First, pull the node:22-alpine image
 
 ```bash
 docker pull node:22-alpine
 ```
 
-In the Repo directory, use the following command to build the docker image 
+Next, in the Repo directory, use the following command to build the docker image 
 
 Note: Do not use sudo if you are running the commands in Windows CMD
 
