@@ -3,10 +3,14 @@ const router= express.Router();
 const { v4: uuidv4 } = require('uuid');
 const receipts = new Map();
 
+//GET request to 'fetch' points for a receipt
 router.get('/:id/points', (req, res, next)=>{
     const id = req.params.id;
+
+    //Find receipt by id
     const receipt = receipts.get(id);
     
+    //If receipt exists, calculate the points and return. Otherwise, return a 404 not found error.
     if (receipt) {
         const points = calculatePoints(receipt);
         res.send({"points": points });
@@ -15,6 +19,7 @@ router.get('/:id/points', (req, res, next)=>{
     }
 });
 
+//POST request to process a receipt
 router.post('/process', (req, res, next)=>{
     //Unique ID Generation
     const id = uuidv4();
